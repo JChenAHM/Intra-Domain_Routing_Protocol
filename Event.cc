@@ -66,4 +66,3 @@ void Event_Recv_Pkt_Generic:: pt() {
 void Event_Alarm::dispatch() {
   rp->handle_alarm(data);
 }
-

@@ -1,4 +1,4 @@
-##include "RoutingProtocolImpl.h"
+#include "RoutingProtocolImpl.h"
 
 RoutingProtocolImpl::RoutingProtocolImpl(Node *n) : RoutingProtocol(n) {
   sys = n;

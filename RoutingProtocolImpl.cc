@@ -32,14 +32,15 @@ void RoutingProtocolImpl::init(unsigned short num_ports, unsigned short router_i
 
   char* data;
   data = (char*)malloc(sizeof(char));
-  // '1' for 1s check, 'n' for neighbor update, 'd' for dv update, 'l' for ls update
+  // '1' for 1s check, 'n' for neighbor update, 'd' for dv update, 'l' for ls update, 's' for lost
   data[0] = '1';
   data[1] = 'n';
   data[2] = 'd';
   data[3] = 'l';
+  data[4] = 's';
   
   void* void_data1 = &data[0];
-  sys->set_alarm(this,1000,void_data1);
+  sys->set_alarm(this,900,void_data1);
   
   void* void_data2 = &data[1];
   sys->set_alarm(this,10000,void_data2);
@@ -47,25 +48,28 @@ void RoutingProtocolImpl::init(unsigned short num_ports, unsigned short router_i
   if(this->proto_type == P_DV) {
         void* void_data3 = &data[2];
         sys->set_alarm(this,30000, void_data3);
-  } else {
+  } else if (this->proto_type == P_LS){
         void* void_data3 = &data[3];
         sys->set_alarm(this,30000, void_data3);
   }
+  
 }
 
 void RoutingProtocolImpl::handle_alarm(void *data) {
     char* flag = static_cast<char*>(data);
     int i;
+	
     // enforce 1s check on dv table
     // enforce 1s check on port table
     if(*flag == '1') {
+		bool isChange = false;
         // check whether DV table has timeout entries
-        show_DV_table();
+        //show_DV_table();
         //show_forwarding_table();
         for(i=0;i<(int)this->DV_table.size(); i++) {
                 this->DV_table.at(i).ttl --;
                 // erase the entry if its' TTL is <= 0
-                if(this->DV_table.at(i).ttl <= 0) {
+				if (this->port_table.at(i).is_alive && this->DV_table.at(i).ttl <= 0) {
                   cout << "The DV entry for destination  " << this->DV_table.at(i).dest_id << " is time out\n"; 
                   this->DV_table.erase(this->DV_table.begin()+i);
                 }
@@ -73,12 +77,26 @@ void RoutingProtocolImpl::handle_alarm(void *data) {
         
         for(i=0;i<(int)this->port_table.size(); i++) {
                 this->port_table.at(i).ttl --;
-                if(this->port_table.at(i).ttl <=0) {
+				if (this->port_table.at(i).is_alive && this->port_table.at(i).ttl <= 0) {
                   cout << "The port entry " <<this->port_table.at(i).port_num << " is time out\n";
+				  isChange = true;
                   this->port_table.at(i).is_alive = false;
+				  //char da='d';
+				  
+				  //sys->set_alarm(this,1000, &da);
                 }
         }
-        sys->set_alarm(this,1000, data);
+		if (proto_type == P_LS)
+		// check timeout for LS
+		checkLSTimeOut();  
+		if (isChange) {
+			if (proto_type == P_LS){
+				printf("\tLS table has updated. Flood the change.\n");
+				sendLSTable();
+				dijkstra();
+			}
+		}
+        sys->set_alarm(this,900, data);
     }
     // enforce 10s ping message update
     else if(*flag == 'n') {
@@ -97,15 +115,16 @@ void RoutingProtocolImpl::handle_alarm(void *data) {
         }
         cout << "The router ID is " << this->router_id << endl;
         show_DV_table();
-        
         sys->set_alarm(this,30000, data);
     }
     else if(*flag == 'l') {
         cout <<"Sending LS update " << endl;
         sendLSTable();
         dijkstra();
+        show_forwarding_table();
         sys->set_alarm(this,30000,data);
-    } else{
+    } 
+	else{
         cout << "encounter unknown protocol" << endl;
     }
 }
@@ -117,13 +136,15 @@ void RoutingProtocolImpl::recv(unsigned short port, void *packet, unsigned short
 
         struct sim_pkt_header* pk = static_cast<struct sim_pkt_header*>(packet);
         if(pk->type == DATA) {
-        }
+                forward_packet(pk->src,pk->dst);
+        } 
         free(packet);
         
   } else{
 //        cout <<"The ID of this router is " << this->router_id << endl;
         char *p = static_cast<char*>(packet);
         ePacketType packet_type = (ePacketType)(*(ePacketType*)p); 
+        char type = *(char *)packet;
         
         if(packet_type == DATA) {
         } else if(packet_type == PING) {
@@ -144,7 +165,8 @@ void RoutingProtocolImpl::recv(unsigned short port, void *packet, unsigned short
                 // store the port status information
                 update_port(port,sid,current_time - time_stamp);
                 // update the DV table based on the neighbor information
-                merge_route(sid,sid,port,current_time - time_stamp);
+                if(this->proto_type == P_DV)
+                        merge_route(sid,sid,port,current_time - time_stamp);
                 
                 
         } else if(packet_type == DV) {
@@ -170,7 +192,7 @@ void RoutingProtocolImpl::recv(unsigned short port, void *packet, unsigned short
                         merge_route(node,sid,port_num,port_cost+cost);
                 }
                 
-        } else if(packet_type == LS) {
+        } else if(type == LS) {
                 recvLS(port,packet,size);
         } else {
                 cout << "Invalid packet type\n"; 
@@ -287,6 +309,34 @@ void RoutingProtocolImpl::update_forwarding_table(unsigned short dest, unsigned 
   }
 }
 
+unsigned short RoutingProtocolImpl::get_port(unsigned short dst) {
+        int i;
+        unsigned short port_num;
+        for(i=0; i< (int)this->port_table.size(); i++) {
+                if(this->port_table.at(i).neighbor_id == dst) {
+                        port_num = this->port_table.at(i).port_num;
+                        break;
+                }
+        }
+        return port_num;  
+}
+
+void RoutingProtocolImpl::forward_packet(unsigned short src, unsigned short dst) {
+
+  void *v_pointer;
+  struct sim_pkt_header * pk = (struct sim_pkt_header *) malloc(sizeof(struct sim_pkt_header));
+  unsigned short pp_size = sizeof(struct sim_pkt_header);
+  unsigned short port_id = get_port(dst);
+
+  pk->type = (unsigned char) DATA;
+  pk->size = htons(pp_size);
+  pk->src = htons(src);
+  pk->dst = htons(dst);
+  
+  v_pointer = pk;
+  sys->send(port_id, v_pointer, pp_size);
+}
+
 void RoutingProtocolImpl::show_port_table() {
   int i;
   cout <<"Router " << this->router_id <<" current port table is:" << endl;
@@ -318,17 +368,3 @@ void RoutingProtocolImpl:: show_forwarding_table() {
              << " next hop is " << this->forwarding_table.at(i).next_hop << endl;
   }
 }
-
-// functions for linked state:
-
-
-void RoutingProtocolImpl::forward_packet() {
-  char **packet;
-  packet = (char**) malloc(sizeof(char*));
-  *packet = (char*) malloc(32);
-  
-  *(ePacketType *) (packet[0]) = (ePacketType) DATA;
-  *(int *) (packet[0]+15) = (int) htons(10);
- 
-}
-

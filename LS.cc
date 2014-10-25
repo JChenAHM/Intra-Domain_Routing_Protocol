@@ -1,12 +1,5 @@
 #include "RoutingProtocolImpl.h"
 
-//do the update every 30 minutes
-bool RoutingProtocolImpl::LSUpdate() {
-	sendLSTable();
-	dijkstra();
-	return true;
-}
-
 //handle the situation when receive a packet with the type LS
 void RoutingProtocolImpl::recvLS(unsigned short port, void *packet, unsigned short size) {
 	char *pck = (char *)packet;
@@ -136,10 +129,16 @@ void RoutingProtocolImpl::dijkstra() {
 	}
 	
 	//update the generic forwarding table
-	/*Forwarding.clear();   // assumed Forwarding
     	for (mapit = nodePair.begin(); mapit != nodePair.end(); mapit++) {
-		updateForward(mapit->first, mapit->second);    // assumed updateForward
-	}*/
+    	    unsigned short next_hop;
+    	    for(i=0; i< (int)this->port_table.size(); i++) {
+                if(this->port_table.at(i).port_num == mapit->second ) {
+                        next_hop = this->port_table.at(i).neighbor_id;
+                        break;
+                }
+            }  
+	update_forwarding_table(mapit->first, next_hop);    // assumed updateForward
+	}
 }
 
 //send the LS table to all neighbours

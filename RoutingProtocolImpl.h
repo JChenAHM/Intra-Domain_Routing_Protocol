@@ -27,6 +27,7 @@ public:
         unsigned short neighbor_id;
         int cost;
         bool is_alive;
+        int ttl;
   };
   typedef struct port rport; 
   
@@ -83,34 +84,65 @@ public:
     // a neighbor router.
     
     
-    void detect_neighbor(unsigned short router_id, unsigned short port_id);
-    void forward_dv();
-    void forward_packet(); 
-    void merge_route(unsigned short dest, unsigned short next, unsigned short port, int cost);
-    void update_forwarding_table(unsigned short dest, unsigned short next_hop);
-    void show_DV_table();
-    void show_port_table();
-    void show_forwarding_table();
-    void forward_dv( unsigned short src_id, unsigned short dest_id, unsigned short port_id );
+
 
  private:
-        Node *sys; // To store Node object; used to access GSR9999 interfaces 
+        // To store Node object; used to access GSR9999 interfaces 
+        Node *sys; 
         
-        short num_ports; // The total number of ports on this router
+        // The total number of ports on this router
+        short num_ports; 
         
-        eProtocolType proto_type; // 
+        // The type of selected protocol
+        eProtocolType proto_type;
+        
+        // The ID of this router
         unsigned short router_id;
     
+        // Vector for storing port status
         vector<rport>  port_table;
+        
+        // Vector for storing DV information
         vector<dvtable> DV_table;
+        
+        // Vector for storing forwarding table information
         vector<ftable> forwarding_table;
+        
+        // Sequence number in the LS update packet
         unsigned int mySequence;		
 	
-	// map of Link State table
+	// Map of Link State table
 	map<unsigned short, linkState> nodeVec;
-
-	// update status (tables) for Link State Protocol
-	bool LSUpdate();
+        
+        void send_to_neighbor(short t);
+        
+        // send ping message for detecting neighbor nodes
+        void detect_neighbor(unsigned short router_id, unsigned short port_id);
+        
+        // Forwarding DV update to the neighbors, trigger 0 if periodic update, 1 if triggered update
+        void forward_dv( unsigned short src_id, unsigned short dest_id, unsigned short port_id,
+                         unsigned short trigger);
+        
+        // Update port status
+        void update_port(unsigned short port, unsigned short neighbor, int cost);
+        
+        // Update DV table based on new DV update or new port status
+        int merge_route(unsigned short dest, unsigned short next, unsigned short port, int cost);
+        
+        // Update the forwarding table based on the DV table
+        void update_forwarding_table(unsigned short dest, unsigned short next_hop);
+        
+        // Get the port number from neighbor id
+        unsigned short get_port(unsigned short dst);
+        
+        // Send data packet to destination node
+        void forward_packet(unsigned short src, unsigned short dst);
+        
+        void show_DV_table();
+        
+        void show_port_table();
+        
+        void show_forwarding_table();
 	
 	// Deal with LS packet
 	void recvLS(unsigned short port, void *packet, unsigned short size);

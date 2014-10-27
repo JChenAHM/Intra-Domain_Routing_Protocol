@@ -1,0 +1,1208 @@
+[nodes]
+       
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 
+       
+[links]
+       
+(171,183) delay 0.98 prob 0.0
+(20,120) delay 0.89 prob 0.0
+(138,2) delay 0.21 prob 0.0
+(134,233) delay 0.27 prob 0.0
+(31,300) delay 0.6 prob 0.0
+(193,84) delay 0.69 prob 0.0
+(34,102) delay 0.05 prob 0.0
+(163,152) delay 0.74 prob 0.0
+(246,63) delay 0.03 prob 0.0
+(60,205) delay 0.13 prob 0.0
+(161,127) delay 0.19 prob 0.0
+(207,147) delay 0.3 prob 0.0
+(187,36) delay 0.62 prob 0.0
+(45,169) delay 0.74 prob 0.0
+(130,199) delay 0.04 prob 0.0
+(52,143) delay 0.79 prob 0.0
+(88,177) delay 0.95 prob 0.0
+(184,91) delay 0.19 prob 0.0
+(176,88) delay 0.63 prob 0.0
+(223,147) delay 0.81 prob 0.0
+(232,59) delay 0.34 prob 0.0
+(123,266) delay 0.06 prob 0.0
+(186,204) delay 0.07 prob 0.0
+(250,248) delay 0.24 prob 0.0
+(246,78) delay 0.54 prob 0.0
+(294,129) delay 0.53 prob 0.0
+(125,216) delay 0.41 prob 0.0
+(57,151) delay 0.65 prob 0.0
+(141,79) delay 0.21 prob 0.0
+(40,1) delay 0.48 prob 0.0
+(194,233) delay 0.19 prob 0.0
+(175,107) delay 1 prob 0.0
+(106,292) delay 0.42 prob 0.0
+(72,293) delay 0.66 prob 0.0
+(259,291) delay 0.31 prob 0.0
+(96,284) delay 0.97 prob 0.0
+(75,108) delay 0.95 prob 0.0
+(283,164) delay 0.31 prob 0.0
+(33,57) delay 0.44 prob 0.0
+(118,96) delay 0.01 prob 0.0
+(154,289) delay 0.5 prob 0.0
+(197,216) delay 0.4 prob 0.0
+(204,21) delay 1 prob 0.0
+(167,145) delay 0.24 prob 0.0
+(26,103) delay 0.52 prob 0.0
+(65,198) delay 0.53 prob 0.0
+(233,272) delay 0.04 prob 0.0
+(121,6) delay 1 prob 0.0
+(107,38) delay 0.56 prob 0.0
+(171,208) delay 0.36 prob 0.0
+(287,61) delay 0.53 prob 0.0
+(88,257) delay 0.71 prob 0.0
+(295,213) delay 0.28 prob 0.0
+(193,79) delay 0.99 prob 0.0
+(136,156) delay 0.71 prob 0.0
+(69,221) delay 0.3 prob 0.0
+(285,205) delay 0.63 prob 0.0
+(60,25) delay 0.07 prob 0.0
+(51,131) delay 0.96 prob 0.0
+(97,53) delay 0.79 prob 0.0
+(291,92) delay 0.71 prob 0.0
+(121,231) delay 0.24 prob 0.0
+(270,225) delay 0.7 prob 0.0
+(139,169) delay 0.14 prob 0.0
+(153,5) delay 0.57 prob 0.0
+(20,73) delay 0.94 prob 0.0
+(85,110) delay 0.18 prob 0.0
+(173,169) delay 0.6 prob 0.0
+(18,271) delay 0.46 prob 0.0
+(201,120) delay 0.21 prob 0.0
+(291,110) delay 0.17 prob 0.0
+(194,230) delay 0.17 prob 0.0
+(105,251) delay 0.93 prob 0.0
+(176,89) delay 0.75 prob 0.0
+(77,293) delay 0.2 prob 0.0
+(186,65) delay 0.13 prob 0.0
+(163,149) delay 0.03 prob 0.0
+(149,73) delay 0.95 prob 0.0
+(159,90) delay 0.52 prob 0.0
+(51,43) delay 0.97 prob 0.0
+(48,33) delay 0.3 prob 0.0
+(136,278) delay 0.71 prob 0.0
+(206,82) delay 0.88 prob 0.0
+(200,9) delay 0.74 prob 0.0
+(63,138) delay 0.62 prob 0.0
+(281,23) delay 0.53 prob 0.0
+(24,238) delay 0.77 prob 0.0
+(176,86) delay 0.95 prob 0.0
+(249,296) delay 0.12 prob 0.0
+(292,46) delay 0.92 prob 0.0
+(206,146) delay 0.09 prob 0.0
+(177,33) delay 0.33 prob 0.0
+(181,239) delay 0.55 prob 0.0
+(83,190) delay 0.74 prob 0.0
+(177,252) delay 0.71 prob 0.0
+(264,285) delay 0.01 prob 0.0
+(63,60) delay 0.23 prob 0.0
+(114,288) delay 0.54 prob 0.0
+(237,236) delay 0.85 prob 0.0
+(254,279) delay 0.61 prob 0.0
+(260,236) delay 0.69 prob 0.0
+(51,112) delay 0.92 prob 0.0
+(120,44) delay 0.77 prob 0.0
+(270,126) delay 0.49 prob 0.0
+(128,54) delay 0.5 prob 0.0
+(176,18) delay 0.98 prob 0.0
+(194,132) delay 0.03 prob 0.0
+(201,246) delay 0.37 prob 0.0
+(293,234) delay 0.58 prob 0.0
+(80,187) delay 0.16 prob 0.0
+(212,147) delay 0.07 prob 0.0
+(294,249) delay 0.26 prob 0.0
+(56,68) delay 0.42 prob 0.0
+(108,37) delay 0.07 prob 0.0
+(49,217) delay 0.96 prob 0.0
+(46,92) delay 0.32 prob 0.0
+(27,37) delay 0.35 prob 0.0
+(68,237) delay 0.47 prob 0.0
+(147,229) delay 0.61 prob 0.0
+(162,60) delay 0.2 prob 0.0
+(258,271) delay 0.5 prob 0.0
+(238,16) delay 0.58 prob 0.0
+(132,71) delay 0.41 prob 0.0
+(18,230) delay 0.22 prob 0.0
+(80,279) delay 0.72 prob 0.0
+(248,76) delay 0.94 prob 0.0
+(81,103) delay 0.88 prob 0.0
+(98,170) delay 0.08 prob 0.0
+(111,68) delay 0.08 prob 0.0
+(58,281) delay 0.71 prob 0.0
+(192,239) delay 0.21 prob 0.0
+(275,228) delay 0.29 prob 0.0
+(7,59) delay 0.83 prob 0.0
+(107,76) delay 0.25 prob 0.0
+(295,208) delay 0.03 prob 0.0
+(151,155) delay 0.66 prob 0.0
+(98,288) delay 0.09 prob 0.0
+(81,137) delay 0.02 prob 0.0
+(104,247) delay 0.48 prob 0.0
+(55,5) delay 0.35 prob 0.0
+(65,248) delay 0.47 prob 0.0
+(97,274) delay 0.22 prob 0.0
+(197,281) delay 0.54 prob 0.0
+(16,139) delay 0.48 prob 0.0
+(116,185) delay 0.45 prob 0.0
+(194,35) delay 0.06 prob 0.0
+(99,132) delay 0.61 prob 0.0
+(107,264) delay 0.77 prob 0.0
+(35,67) delay 0.66 prob 0.0
+(31,121) delay 0.89 prob 0.0
+(8,237) delay 0.97 prob 0.0
+(274,85) delay 0.73 prob 0.0
+(168,282) delay 0.39 prob 0.0
+(172,49) delay 0.69 prob 0.0
+(199,164) delay 0.16 prob 0.0
+(238,109) delay 0.18 prob 0.0
+(131,207) delay 0.67 prob 0.0
+(11,65) delay 0.14 prob 0.0
+(27,100) delay 0.34 prob 0.0
+(41,130) delay 1.01 prob 0.0
+(60,189) delay 0.82 prob 0.0
+(25,163) delay 0.65 prob 0.0
+(264,82) delay 0.45 prob 0.0
+(235,253) delay 0.7 prob 0.0
+(44,203) delay 0.29 prob 0.0
+(89,140) delay 0.59 prob 0.0
+(116,270) delay 0.57 prob 0.0
+(26,32) delay 0.3 prob 0.0
+(199,58) delay 0.48 prob 0.0
+(138,151) delay 0.23 prob 0.0
+(249,210) delay 0.22 prob 0.0
+(296,286) delay 0.59 prob 0.0
+(180,250) delay 0.87 prob 0.0
+(292,236) delay 0.92 prob 0.0
+(205,32) delay 0.21 prob 0.0
+(32,120) delay 0.51 prob 0.0
+(216,236) delay 0.88 prob 0.0
+(110,13) delay 0.89 prob 0.0
+(68,212) delay 0.98 prob 0.0
+(74,49) delay 0.78 prob 0.0
+(261,298) delay 0.5 prob 0.0
+(88,45) delay 0.43 prob 0.0
+(26,224) delay 0.96 prob 0.0
+(148,268) delay 0.11 prob 0.0
+(223,224) delay 0.91 prob 0.0
+(252,255) delay 0.14 prob 0.0
+(120,222) delay 0.67 prob 0.0
+(10,31) delay 0.13 prob 0.0
+(284,99) delay 0.32 prob 0.0
+(15,224) delay 0.56 prob 0.0
+(248,236) delay 0.17 prob 0.0
+(90,23) delay 0.3 prob 0.0
+(269,100) delay 0.23 prob 0.0
+(150,300) delay 0.75 prob 0.0
+(266,222) delay 0.87 prob 0.0
+(113,225) delay 0.54 prob 0.0
+(131,44) delay 1 prob 0.0
+(85,106) delay 0.47 prob 0.0
+(51,89) delay 0.24 prob 0.0
+(228,155) delay 0.45 prob 0.0
+(205,102) delay 0.65 prob 0.0
+(232,243) delay 0.37 prob 0.0
+(251,211) delay 0.21 prob 0.0
+(245,60) delay 0.01 prob 0.0
+(207,77) delay 0.35 prob 0.0
+(91,189) delay 0.42 prob 0.0
+(282,20) delay 0.38 prob 0.0
+(95,156) delay 0.1 prob 0.0
+(290,206) delay 0.8 prob 0.0
+(283,185) delay 0.41 prob 0.0
+(251,141) delay 0.38 prob 0.0
+(206,72) delay 0.52 prob 0.0
+(235,22) delay 0.92 prob 0.0
+(64,19) delay 0.84 prob 0.0
+(244,277) delay 0.39 prob 0.0
+(97,119) delay 0.46 prob 0.0
+(122,101) delay 0.18 prob 0.0
+(295,195) delay 0.55 prob 0.0
+(272,184) delay 0.34 prob 0.0
+(90,218) delay 0.2 prob 0.0
+(61,220) delay 0.01 prob 0.0
+(134,177) delay 0.93 prob 0.0
+(200,111) delay 0.91 prob 0.0
+(177,227) delay 0.83 prob 0.0
+(266,222) delay 0.77 prob 0.0
+(131,19) delay 0.24 prob 0.0
+(236,192) delay 0.45 prob 0.0
+(113,186) delay 0.71 prob 0.0
+(92,210) delay 0.46 prob 0.0
+(81,299) delay 0.94 prob 0.0
+(201,59) delay 0.91 prob 0.0
+(214,244) delay 0.33 prob 0.0
+(299,144) delay 0.24 prob 0.0
+(157,72) delay 0.83 prob 0.0
+(33,37) delay 0.08 prob 0.0
+(237,167) delay 0.02 prob 0.0
+(207,155) delay 0.38 prob 0.0
+(30,267) delay 0.85 prob 0.0
+(98,110) delay 0.53 prob 0.0
+(102,190) delay 0.88 prob 0.0
+(22,143) delay 0.96 prob 0.0
+(214,108) delay 0.46 prob 0.0
+(281,106) delay 0.24 prob 0.0
+(159,14) delay 0.54 prob 0.0
+(15,46) delay 0.83 prob 0.0
+(93,34) delay 0.16 prob 0.0
+(240,241) delay 0.99 prob 0.0
+(31,270) delay 0.8 prob 0.0
+(8,119) delay 0.47 prob 0.0
+(193,220) delay 0.68 prob 0.0
+(129,294) delay 0.94 prob 0.0
+(123,207) delay 0.57 prob 0.0
+(60,187) delay 0.17 prob 0.0
+(245,98) delay 0.62 prob 0.0
+(149,112) delay 0.4 prob 0.0
+(89,256) delay 0.25 prob 0.0
+(300,248) delay 0.08 prob 0.0
+(65,278) delay 0.67 prob 0.0
+(96,285) delay 0.37 prob 0.0
+(289,178) delay 0.96 prob 0.0
+(71,58) delay 0.7 prob 0.0
+(47,180) delay 0.15 prob 0.0
+(78,291) delay 0.98 prob 0.0
+(19,235) delay 0.72 prob 0.0
+(274,83) delay 0.19 prob 0.0
+(26,224) delay 0.82 prob 0.0
+(111,275) delay 0.93 prob 0.0
+(137,40) delay 0.55 prob 0.0
+(183,187) delay 0.2 prob 0.0
+(100,175) delay 0.06 prob 0.0
+(237,297) delay 0.66 prob 0.0
+(66,43) delay 0.94 prob 0.0
+(154,173) delay 0.67 prob 0.0
+(180,243) delay 0.77 prob 0.0
+(251,216) delay 0.07 prob 0.0
+(185,241) delay 0.42 prob 0.0
+(75,52) delay 0.28 prob 0.0
+(264,240) delay 0.28 prob 0.0
+(79,122) delay 0.54 prob 0.0
+(230,274) delay 0.86 prob 0.0
+(10,210) delay 0.88 prob 0.0
+(147,27) delay 0.88 prob 0.0
+(215,232) delay 0.39 prob 0.0
+(273,111) delay 0.92 prob 0.0
+(266,61) delay 0.4 prob 0.0
+(146,298) delay 0.55 prob 0.0
+(196,124) delay 0.61 prob 0.0
+(273,88) delay 0.99 prob 0.0
+(141,218) delay 1.01 prob 0.0
+(144,199) delay 0.01 prob 0.0
+(125,208) delay 0.63 prob 0.0
+(102,106) delay 0.53 prob 0.0
+(174,72) delay 0.88 prob 0.0
+(170,44) delay 0.27 prob 0.0
+(57,62) delay 0.1 prob 0.0
+(211,207) delay 0.54 prob 0.0
+(57,154) delay 0.04 prob 0.0
+(7,179) delay 0.2 prob 0.0
+(143,19) delay 0.89 prob 0.0
+(205,214) delay 0.95 prob 0.0
+(240,38) delay 0.09 prob 0.0
+(236,192) delay 0.98 prob 0.0
+(259,117) delay 0.51 prob 0.0
+(213,39) delay 0.69 prob 0.0
+(29,95) delay 0.59 prob 0.0
+(206,57) delay 0.61 prob 0.0
+(132,165) delay 0.49 prob 0.0
+(182,171) delay 0.84 prob 0.0
+(18,66) delay 0.58 prob 0.0
+(72,270) delay 0.57 prob 0.0
+(75,262) delay 1 prob 0.0
+(286,197) delay 0.71 prob 0.0
+(53,155) delay 0.57 prob 0.0
+(192,119) delay 0.96 prob 0.0
+(126,148) delay 0.78 prob 0.0
+(173,105) delay 0.41 prob 0.0
+(126,237) delay 0.4 prob 0.0
+(284,170) delay 0.67 prob 0.0
+(21,187) delay 0.19 prob 0.0
+(76,10) delay 0.64 prob 0.0
+(44,85) delay 0.65 prob 0.0
+(154,70) delay 0.51 prob 0.0
+(155,122) delay 0.08 prob 0.0
+(25,65) delay 0.21 prob 0.0
+(232,190) delay 0.51 prob 0.0
+(286,114) delay 0.05 prob 0.0
+(147,239) delay 0.03 prob 0.0
+(173,275) delay 0.14 prob 0.0
+(122,295) delay 0.58 prob 0.0
+(135,122) delay 0.56 prob 0.0
+(170,217) delay 1.01 prob 0.0
+(166,71) delay 0.67 prob 0.0
+(111,277) delay 0.18 prob 0.0
+(210,1) delay 0.05 prob 0.0
+(179,285) delay 0.61 prob 0.0
+(48,22) delay 0.1 prob 0.0
+(21,168) delay 0.78 prob 0.0
+(282,41) delay 0.12 prob 0.0
+(112,214) delay 0.29 prob 0.0
+(180,48) delay 0.18 prob 0.0
+(206,218) delay 0.02 prob 0.0
+(68,83) delay 0.45 prob 0.0
+(299,245) delay 0.49 prob 0.0
+(104,154) delay 0.04 prob 0.0
+(25,85) delay 0.04 prob 0.0
+(135,184) delay 0.26 prob 0.0
+(59,256) delay 0.76 prob 0.0
+(274,289) delay 0.59 prob 0.0
+(214,152) delay 0.07 prob 0.0
+(149,31) delay 0.07 prob 0.0
+(256,289) delay 0.53 prob 0.0
+(280,108) delay 0.74 prob 0.0
+(74,159) delay 0.21 prob 0.0
+(197,262) delay 0.67 prob 0.0
+(72,286) delay 0.32 prob 0.0
+(231,120) delay 0.67 prob 0.0
+(163,231) delay 0.41 prob 0.0
+(210,204) delay 0.9 prob 0.0
+(102,169) delay 0.93 prob 0.0
+(206,17) delay 0.74 prob 0.0
+(110,25) delay 0.53 prob 0.0
+(179,4) delay 0.96 prob 0.0
+(135,130) delay 0.68 prob 0.0
+(35,78) delay 0.53 prob 0.0
+(140,149) delay 0.55 prob 0.0
+(30,131) delay 0.34 prob 0.0
+(154,293) delay 0.99 prob 0.0
+(234,254) delay 0.92 prob 0.0
+(1,55) delay 0.91 prob 0.0
+(220,13) delay 0.93 prob 0.0
+(169,122) delay 0.79 prob 0.0
+(158,53) delay 0.17 prob 0.0
+(254,239) delay 0.52 prob 0.0
+(157,273) delay 0.64 prob 0.0
+(124,164) delay 0.22 prob 0.0
+(129,193) delay 0.63 prob 0.0
+(253,47) delay 0.78 prob 0.0
+(59,32) delay 0.75 prob 0.0
+(120,32) delay 0.77 prob 0.0
+(49,251) delay 0.25 prob 0.0
+(47,171) delay 0.59 prob 0.0
+(69,28) delay 0.28 prob 0.0
+(147,282) delay 0.06 prob 0.0
+(53,190) delay 0.46 prob 0.0
+(89,65) delay 0.12 prob 0.0
+(272,193) delay 0.04 prob 0.0
+(286,197) delay 0.2 prob 0.0
+(291,255) delay 1 prob 0.0
+(2,126) delay 0.3 prob 0.0
+(68,175) delay 0.73 prob 0.0
+(197,273) delay 0.3 prob 0.0
+(148,94) delay 0.22 prob 0.0
+(203,240) delay 0.76 prob 0.0
+(196,44) delay 0.57 prob 0.0
+(265,132) delay 0.51 prob 0.0
+(146,104) delay 0.8 prob 0.0
+(271,141) delay 0.4 prob 0.0
+(194,131) delay 0.98 prob 0.0
+(148,133) delay 0.06 prob 0.0
+(133,252) delay 0.25 prob 0.0
+(121,148) delay 0.1 prob 0.0
+(280,296) delay 0.05 prob 0.0
+(166,250) delay 0.6 prob 0.0
+(85,198) delay 0.24 prob 0.0
+(193,162) delay 0.63 prob 0.0
+(117,59) delay 0.62 prob 0.0
+(234,81) delay 0.84 prob 0.0
+(248,26) delay 0.71 prob 0.0
+(216,173) delay 0.31 prob 0.0
+(61,58) delay 0.73 prob 0.0
+(133,230) delay 0.87 prob 0.0
+(229,209) delay 0.63 prob 0.0
+(118,126) delay 0.28 prob 0.0
+(246,210) delay 0.21 prob 0.0
+(221,154) delay 0.54 prob 0.0
+(28,271) delay 0.35 prob 0.0
+(290,256) delay 0.37 prob 0.0
+(144,203) delay 0.09 prob 0.0
+(129,118) delay 0.18 prob 0.0
+(297,231) delay 0.92 prob 0.0
+(65,115) delay 1.01 prob 0.0
+(84,43) delay 0.08 prob 0.0
+(98,160) delay 0.68 prob 0.0
+(61,157) delay 0.21 prob 0.0
+(274,129) delay 0.55 prob 0.0
+(100,209) delay 0.88 prob 0.0
+(36,250) delay 0.97 prob 0.0
+(1,94) delay 0.86 prob 0.0
+(44,222) delay 0.87 prob 0.0
+(11,218) delay 0.03 prob 0.0
+(35,34) delay 0.6 prob 0.0
+(40,117) delay 0.32 prob 0.0
+(254,266) delay 0.23 prob 0.0
+(294,27) delay 0.92 prob 0.0
+(295,52) delay 0.26 prob 0.0
+(149,203) delay 0.23 prob 0.0
+(26,238) delay 0.09 prob 0.0
+(158,291) delay 0.66 prob 0.0
+(192,86) delay 0.29 prob 0.0
+(230,182) delay 0.39 prob 0.0
+(282,221) delay 0.75 prob 0.0
+(76,175) delay 0.33 prob 0.0
+(29,168) delay 0.06 prob 0.0
+(242,162) delay 0.15 prob 0.0
+(284,62) delay 0.12 prob 0.0
+(233,87) delay 0.64 prob 0.0
+(132,244) delay 0.06 prob 0.0
+(176,136) delay 0.48 prob 0.0
+(141,231) delay 0.72 prob 0.0
+(76,213) delay 0.34 prob 0.0
+(96,194) delay 0.01 prob 0.0
+(284,270) delay 0.47 prob 0.0
+(138,50) delay 0.71 prob 0.0
+(70,44) delay 0.93 prob 0.0
+(53,27) delay 0.66 prob 0.0
+(290,11) delay 0.45 prob 0.0
+(217,195) delay 0.9 prob 0.0
+(133,70) delay 0.52 prob 0.0
+(135,263) delay 0.85 prob 0.0
+(283,90) delay 0.88 prob 0.0
+(13,237) delay 0.87 prob 0.0
+(263,272) delay 0.12 prob 0.0
+(139,110) delay 0.87 prob 0.0
+(182,231) delay 0.99 prob 0.0
+(190,36) delay 0.74 prob 0.0
+(207,77) delay 0.67 prob 0.0
+(63,293) delay 0.54 prob 0.0
+(111,178) delay 0.32 prob 0.0
+(45,12) delay 0.62 prob 0.0
+(262,46) delay 0.38 prob 0.0
+(91,58) delay 0.31 prob 0.0
+(166,72) delay 0.48 prob 0.0
+(209,210) delay 0.54 prob 0.0
+(54,91) delay 0.54 prob 0.0
+(294,280) delay 0.94 prob 0.0
+(260,239) delay 0.17 prob 0.0
+(237,1) delay 0.22 prob 0.0
+(107,163) delay 0.46 prob 0.0
+(99,260) delay 0.02 prob 0.0
+(105,221) delay 0.62 prob 0.0
+(200,64) delay 0.92 prob 0.0
+(231,229) delay 0.23 prob 0.0
+(234,189) delay 0.71 prob 0.0
+(149,295) delay 0.68 prob 0.0
+(243,288) delay 0.07 prob 0.0
+(124,248) delay 0.53 prob 0.0
+(134,184) delay 0.81 prob 0.0
+(136,42) delay 0.14 prob 0.0
+(67,193) delay 0.36 prob 0.0
+(9,297) delay 0.97 prob 0.0
+(48,197) delay 0.15 prob 0.0
+(145,179) delay 0.44 prob 0.0
+(14,112) delay 0.28 prob 0.0
+(144,13) delay 0.18 prob 0.0
+(64,255) delay 0.78 prob 0.0
+(16,131) delay 0.13 prob 0.0
+(258,16) delay 0.23 prob 0.0
+(253,151) delay 0.61 prob 0.0
+(110,217) delay 0.9 prob 0.0
+(226,277) delay 0.36 prob 0.0
+(262,24) delay 0.71 prob 0.0
+(114,169) delay 0.57 prob 0.0
+(193,234) delay 0.06 prob 0.0
+(213,77) delay 0.74 prob 0.0
+(175,192) delay 0.78 prob 0.0
+(177,208) delay 0.09 prob 0.0
+(177,217) delay 0.86 prob 0.0
+(61,221) delay 0.94 prob 0.0
+(38,30) delay 0.78 prob 0.0
+(259,255) delay 0.39 prob 0.0
+(124,269) delay 0.04 prob 0.0
+(290,82) delay 0.31 prob 0.0
+(282,26) delay 0.41 prob 0.0
+(137,239) delay 0.37 prob 0.0
+(5,165) delay 0.19 prob 0.0
+(231,41) delay 0.93 prob 0.0
+(287,270) delay 0.75 prob 0.0
+(58,82) delay 0.47 prob 0.0
+(83,171) delay 0.87 prob 0.0
+(24,129) delay 0.97 prob 0.0
+(293,252) delay 0.04 prob 0.0
+(285,293) delay 0.58 prob 0.0
+(146,274) delay 0.33 prob 0.0
+(291,163) delay 0.91 prob 0.0
+(265,167) delay 0.81 prob 0.0
+(130,149) delay 0.45 prob 0.0
+(254,135) delay 0.98 prob 0.0
+(294,244) delay 0.93 prob 0.0
+(7,26) delay 0.57 prob 0.0
+(50,49) delay 0.45 prob 0.0
+(47,93) delay 0.59 prob 0.0
+(12,77) delay 0.67 prob 0.0
+(162,222) delay 0.26 prob 0.0
+(37,265) delay 0.07 prob 0.0
+(151,281) delay 0.84 prob 0.0
+(181,162) delay 0.31 prob 0.0
+(3,115) delay 0.24 prob 0.0
+(95,160) delay 0.81 prob 0.0
+(267,167) delay 0.59 prob 0.0
+(10,216) delay 0.01 prob 0.0
+(180,14) delay 0.46 prob 0.0
+(54,77) delay 0.62 prob 0.0
+(221,238) delay 0.47 prob 0.0
+(113,274) delay 0.4 prob 0.0
+(167,176) delay 0.44 prob 0.0
+(87,108) delay 0.77 prob 0.0
+(207,111) delay 0.96 prob 0.0
+(161,205) delay 0.4 prob 0.0
+(110,171) delay 0.23 prob 0.0
+(32,180) delay 0.3 prob 0.0
+(106,112) delay 0.56 prob 0.0
+(272,165) delay 0.36 prob 0.0
+(214,137) delay 0.95 prob 0.0
+(130,249) delay 0.63 prob 0.0
+(62,167) delay 0.29 prob 0.0
+(274,253) delay 0.75 prob 0.0
+(47,211) delay 0.08 prob 0.0
+(286,123) delay 0.6 prob 0.0
+(85,232) delay 0.88 prob 0.0
+(49,15) delay 0.82 prob 0.0
+(33,172) delay 0.18 prob 0.0
+(277,143) delay 0.21 prob 0.0
+(50,109) delay 0.92 prob 0.0
+(111,238) delay 0.85 prob 0.0
+(198,52) delay 0.08 prob 0.0
+(161,25) delay 0.09 prob 0.0
+(283,124) delay 0.86 prob 0.0
+(215,109) delay 0.92 prob 0.0
+(51,193) delay 0.75 prob 0.0
+(57,294) delay 0.23 prob 0.0
+(47,26) delay 0.73 prob 0.0
+(96,2) delay 0.99 prob 0.0
+(62,103) delay 0.63 prob 0.0
+(216,266) delay 0.44 prob 0.0
+(70,215) delay 0.8 prob 0.0
+(39,127) delay 0.12 prob 0.0
+(65,109) delay 0.85 prob 0.0
+(1,23) delay 0.57 prob 0.0
+(111,125) delay 1.01 prob 0.0
+(153,182) delay 0.72 prob 0.0
+(210,280) delay 1 prob 0.0
+(138,76) delay 0.05 prob 0.0
+(12,189) delay 0.23 prob 0.0
+(243,104) delay 0.14 prob 0.0
+(215,173) delay 0.4 prob 0.0
+(186,264) delay 0.6 prob 0.0
+(233,80) delay 0.16 prob 0.0
+(104,80) delay 0.13 prob 0.0
+(83,242) delay 0.45 prob 0.0
+(6,95) delay 0.63 prob 0.0
+(223,4) delay 0.47 prob 0.0
+(164,193) delay 0.15 prob 0.0
+(159,256) delay 0.54 prob 0.0
+(9,198) delay 0.19 prob 0.0
+(175,164) delay 0.29 prob 0.0
+(256,49) delay 0.89 prob 0.0
+(164,34) delay 0.4 prob 0.0
+(180,137) delay 0.34 prob 0.0
+(270,271) delay 0.61 prob 0.0
+(237,276) delay 0.27 prob 0.0
+(85,250) delay 0.89 prob 0.0
+(213,114) delay 0.83 prob 0.0
+(167,24) delay 0.07 prob 0.0
+(10,32) delay 0.9 prob 0.0
+(255,207) delay 0.74 prob 0.0
+(125,162) delay 0.02 prob 0.0
+(10,25) delay 0.89 prob 0.0
+(222,256) delay 0.82 prob 0.0
+(17,226) delay 0.03 prob 0.0
+(2,214) delay 0.2 prob 0.0
+(184,299) delay 0.01 prob 0.0
+(70,211) delay 0.8 prob 0.0
+(199,129) delay 0.59 prob 0.0
+(284,138) delay 0.93 prob 0.0
+(19,93) delay 0.29 prob 0.0
+(267,279) delay 0.49 prob 0.0
+(299,252) delay 0.06 prob 0.0
+(218,269) delay 0.9 prob 0.0
+(108,22) delay 0.42 prob 0.0
+(273,205) delay 0.93 prob 0.0
+(139,274) delay 0.2 prob 0.0
+(171,173) delay 0.06 prob 0.0
+(226,208) delay 0.69 prob 0.0
+(12,278) delay 0.94 prob 0.0
+(5,246) delay 0.75 prob 0.0
+(211,213) delay 0.32 prob 0.0
+(193,211) delay 0.03 prob 0.0
+(131,128) delay 0.9 prob 0.0
+(294,235) delay 0.83 prob 0.0
+(123,259) delay 0.76 prob 0.0
+(1,150) delay 0.22 prob 0.0
+(90,20) delay 0.38 prob 0.0
+(7,245) delay 0.29 prob 0.0
+(113,256) delay 0.16 prob 0.0
+(64,12) delay 0.4 prob 0.0
+(283,274) delay 0.67 prob 0.0
+(232,167) delay 0.18 prob 0.0
+(132,297) delay 0.41 prob 0.0
+(53,43) delay 0.05 prob 0.0
+(242,217) delay 0.28 prob 0.0
+(88,217) delay 0.1 prob 0.0
+(260,6) delay 0.64 prob 0.0
+(3,64) delay 0.12 prob 0.0
+(58,177) delay 0.48 prob 0.0
+(39,240) delay 0.98 prob 0.0
+(17,274) delay 0.34 prob 0.0
+(207,205) delay 0.71 prob 0.0
+(59,36) delay 0.12 prob 0.0
+(90,88) delay 0.14 prob 0.0
+(108,82) delay 0.17 prob 0.0
+(137,221) delay 0.46 prob 0.0
+(14,180) delay 0.52 prob 0.0
+(15,235) delay 0.42 prob 0.0
+(259,292) delay 0.15 prob 0.0
+(211,82) delay 0.65 prob 0.0
+(175,98) delay 0.64 prob 0.0
+(164,4) delay 0.76 prob 0.0
+(71,114) delay 0.36 prob 0.0
+(274,204) delay 0.01 prob 0.0
+(272,63) delay 0.52 prob 0.0
+(237,199) delay 0.95 prob 0.0
+(119,265) delay 0.86 prob 0.0
+(111,279) delay 0.27 prob 0.0
+(166,289) delay 0.47 prob 0.0
+(97,200) delay 0.62 prob 0.0
+(19,126) delay 0.75 prob 0.0
+(266,41) delay 0.19 prob 0.0
+(117,111) delay 0.44 prob 0.0
+(55,136) delay 0.57 prob 0.0
+(133,159) delay 0.96 prob 0.0
+(44,96) delay 0.18 prob 0.0
+(176,266) delay 0.36 prob 0.0
+(239,76) delay 0.11 prob 0.0
+(40,241) delay 0.56 prob 0.0
+(132,89) delay 0.82 prob 0.0
+(6,159) delay 0.19 prob 0.0
+(30,124) delay 0.34 prob 0.0
+(109,292) delay 0.62 prob 0.0
+(249,99) delay 0.47 prob 0.0
+(97,231) delay 0.37 prob 0.0
+(7,27) delay 0.14 prob 0.0
+(115,202) delay 0.22 prob 0.0
+(292,192) delay 0.47 prob 0.0
+(198,231) delay 0.94 prob 0.0
+(41,114) delay 0.78 prob 0.0
+(187,120) delay 0.94 prob 0.0
+(106,201) delay 0.39 prob 0.0
+(117,9) delay 0.53 prob 0.0
+(290,9) delay 0.05 prob 0.0
+(299,157) delay 0.97 prob 0.0
+(166,163) delay 0.08 prob 0.0
+(180,30) delay 0.35 prob 0.0
+(159,21) delay 0.95 prob 0.0
+(266,270) delay 0.45 prob 0.0
+(118,63) delay 0.66 prob 0.0
+(58,249) delay 0.85 prob 0.0
+(156,107) delay 0.41 prob 0.0
+(182,223) delay 0.87 prob 0.0
+(200,265) delay 0.64 prob 0.0
+(15,263) delay 0.61 prob 0.0
+(113,128) delay 0.06 prob 0.0
+(237,7) delay 0.5 prob 0.0
+(262,217) delay 0.6 prob 0.0
+(230,235) delay 0.46 prob 0.0
+(180,52) delay 0.3 prob 0.0
+(192,161) delay 0.59 prob 0.0
+(126,16) delay 0.83 prob 0.0
+(261,250) delay 1.01 prob 0.0
+(155,149) delay 0.06 prob 0.0
+(110,215) delay 0.12 prob 0.0
+(222,28) delay 0.21 prob 0.0
+(196,264) delay 0.45 prob 0.0
+(251,278) delay 0.39 prob 0.0
+(26,207) delay 0.14 prob 0.0
+(122,87) delay 0.3 prob 0.0
+(281,30) delay 0.63 prob 0.0
+(88,155) delay 0.71 prob 0.0
+(1,167) delay 0.93 prob 0.0
+(188,22) delay 0.46 prob 0.0
+(40,131) delay 0.7 prob 0.0
+(153,52) delay 0.91 prob 0.0
+(146,299) delay 0.49 prob 0.0
+(144,249) delay 0.12 prob 0.0
+(111,26) delay 0.4 prob 0.0
+(12,148) delay 0.75 prob 0.0
+(264,180) delay 0.48 prob 0.0
+(128,267) delay 0.43 prob 0.0
+(60,19) delay 0.01 prob 0.0
+(240,206) delay 0.4 prob 0.0
+(269,245) delay 0.55 prob 0.0
+(264,150) delay 0.06 prob 0.0
+(286,295) delay 0.98 prob 0.0
+(23,138) delay 0.12 prob 0.0
+(38,1) delay 0.4 prob 0.0
+(259,12) delay 0.94 prob 0.0
+(70,28) delay 0.68 prob 0.0
+(210,155) delay 0.88 prob 0.0
+(256,214) delay 0.33 prob 0.0
+(221,206) delay 0.72 prob 0.0
+(207,174) delay 0.06 prob 0.0
+(76,189) delay 0.84 prob 0.0
+(296,226) delay 0.56 prob 0.0
+(18,248) delay 0.01 prob 0.0
+(237,285) delay 0.23 prob 0.0
+(234,295) delay 1.01 prob 0.0
+(129,64) delay 0.29 prob 0.0
+(204,25) delay 0.37 prob 0.0
+(296,281) delay 0.93 prob 0.0
+(107,253) delay 0.55 prob 0.0
+(175,160) delay 0.35 prob 0.0
+(187,235) delay 0.01 prob 0.0
+(101,282) delay 0.76 prob 0.0
+(60,299) delay 0.74 prob 0.0
+(157,288) delay 0.38 prob 0.0
+(254,273) delay 0.76 prob 0.0
+(115,101) delay 0.24 prob 0.0
+(250,56) delay 0.66 prob 0.0
+(44,52) delay 0.07 prob 0.0
+(52,210) delay 0.49 prob 0.0
+(16,84) delay 0.97 prob 0.0
+(154,22) delay 0.37 prob 0.0
+(231,174) delay 0.75 prob 0.0
+(234,286) delay 0.4 prob 0.0
+(184,142) delay 0.09 prob 0.0
+(170,148) delay 0.22 prob 0.0
+(151,262) delay 0.03 prob 0.0
+(196,263) delay 0.21 prob 0.0
+(17,7) delay 0.61 prob 0.0
+(118,110) delay 0.55 prob 0.0
+(223,125) delay 0.06 prob 0.0
+(188,278) delay 0.2 prob 0.0
+(138,261) delay 0.47 prob 0.0
+(122,194) delay 0.4 prob 0.0
+(104,129) delay 1 prob 0.0
+(177,50) delay 0.81 prob 0.0
+(170,201) delay 0.5 prob 0.0
+(67,148) delay 0.35 prob 0.0
+(20,216) delay 0.38 prob 0.0
+(76,33) delay 0.84 prob 0.0
+(93,7) delay 0.92 prob 0.0
+(245,194) delay 0.31 prob 0.0
+(119,84) delay 0.68 prob 0.0
+(218,205) delay 0.43 prob 0.0
+(54,60) delay 0.29 prob 0.0
+(279,288) delay 0.63 prob 0.0
+(104,209) delay 0.52 prob 0.0
+(241,275) delay 0.53 prob 0.0
+(41,47) delay 0.29 prob 0.0
+(199,174) delay 0.54 prob 0.0
+(166,267) delay 0.42 prob 0.0
+(258,211) delay 0.54 prob 0.0
+(79,81) delay 0.27 prob 0.0
+(212,50) delay 0.68 prob 0.0
+(238,103) delay 0.14 prob 0.0
+(144,134) delay 0.75 prob 0.0
+(99,289) delay 0.36 prob 0.0
+(59,229) delay 0.68 prob 0.0
+(165,22) delay 0.22 prob 0.0
+(187,220) delay 0.25 prob 0.0
+(292,138) delay 0.98 prob 0.0
+(104,95) delay 0.44 prob 0.0
+(162,225) delay 0.83 prob 0.0
+(54,136) delay 0.27 prob 0.0
+(203,73) delay 0.81 prob 0.0
+(110,268) delay 0.77 prob 0.0
+(57,118) delay 0.61 prob 0.0
+(211,176) delay 0.83 prob 0.0
+(40,41) delay 0.07 prob 0.0
+(267,227) delay 0.39 prob 0.0
+(16,218) delay 0.6 prob 0.0
+(134,22) delay 0.6 prob 0.0
+(163,235) delay 0.02 prob 0.0
+(25,40) delay 0.87 prob 0.0
+(236,242) delay 0.21 prob 0.0
+(249,104) delay 0.33 prob 0.0
+(96,212) delay 0.52 prob 0.0
+(282,122) delay 0.94 prob 0.0
+(97,214) delay 0.78 prob 0.0
+(233,180) delay 0.99 prob 0.0
+(41,247) delay 0.77 prob 0.0
+(233,81) delay 0.85 prob 0.0
+(24,295) delay 0.76 prob 0.0
+(38,71) delay 0.76 prob 0.0
+(188,6) delay 0.86 prob 0.0
+(161,7) delay 0.17 prob 0.0
+(102,154) delay 0.11 prob 0.0
+(160,135) delay 0.02 prob 0.0
+(145,232) delay 0.58 prob 0.0
+(171,164) delay 0.65 prob 0.0
+(122,204) delay 0.79 prob 0.0
+(43,189) delay 0.65 prob 0.0
+(285,212) delay 0.65 prob 0.0
+(265,249) delay 0.93 prob 0.0
+(285,136) delay 0.08 prob 0.0
+(298,49) delay 0.24 prob 0.0
+(166,150) delay 0.83 prob 0.0
+(245,61) delay 0.43 prob 0.0
+(197,257) delay 0.54 prob 0.0
+(115,127) delay 0.88 prob 0.0
+(160,1) delay 0.14 prob 0.0
+(255,43) delay 0.94 prob 0.0
+(131,80) delay 0.51 prob 0.0
+(1,44) delay 0.88 prob 0.0
+(293,28) delay 0.21 prob 0.0
+(291,25) delay 0.4 prob 0.0
+(295,242) delay 0.42 prob 0.0
+(152,186) delay 0.11 prob 0.0
+(196,135) delay 0.74 prob 0.0
+(170,249) delay 0.71 prob 0.0
+(8,160) delay 0.35 prob 0.0
+(102,114) delay 0.08 prob 0.0
+(135,244) delay 0.39 prob 0.0
+(80,244) delay 0.68 prob 0.0
+(273,237) delay 0.04 prob 0.0
+(105,227) delay 0.3 prob 0.0
+(234,274) delay 0.63 prob 0.0
+(263,177) delay 0.77 prob 0.0
+(105,72) delay 0.08 prob 0.0
+(203,294) delay 0.81 prob 0.0
+(127,53) delay 0.23 prob 0.0
+(52,206) delay 0.14 prob 0.0
+(71,41) delay 0.49 prob 0.0
+(169,120) delay 0.6 prob 0.0
+(10,92) delay 0.36 prob 0.0
+(231,196) delay 0.18 prob 0.0
+(229,181) delay 0.3 prob 0.0
+(168,196) delay 0.86 prob 0.0
+(292,300) delay 0.93 prob 0.0
+(251,202) delay 0.04 prob 0.0
+(209,28) delay 0.74 prob 0.0
+(27,131) delay 0.46 prob 0.0
+(206,201) delay 0.82 prob 0.0
+(80,69) delay 0.97 prob 0.0
+(250,131) delay 0.43 prob 0.0
+(108,61) delay 0.76 prob 0.0
+(193,289) delay 0.31 prob 0.0
+(2,208) delay 0.19 prob 0.0
+(288,200) delay 0.83 prob 0.0
+(98,202) delay 0.27 prob 0.0
+(200,162) delay 0.56 prob 0.0
+(55,188) delay 0.35 prob 0.0
+(116,145) delay 0.06 prob 0.0
+(268,225) delay 0.05 prob 0.0
+(188,226) delay 1.01 prob 0.0
+(250,34) delay 0.27 prob 0.0
+(260,278) delay 0.13 prob 0.0
+(151,31) delay 0.89 prob 0.0
+(288,71) delay 0.94 prob 0.0
+(125,168) delay 0.7 prob 0.0
+(214,119) delay 0.29 prob 0.0
+(31,226) delay 0.62 prob 0.0
+(31,41) delay 0.12 prob 0.0
+(283,8) delay 0.97 prob 0.0
+(55,247) delay 0.73 prob 0.0
+(206,197) delay 0.07 prob 0.0
+(221,208) delay 0.18 prob 0.0
+(224,110) delay 1.01 prob 0.0
+(187,98) delay 0.73 prob 0.0
+       
+[events]
+       
+0 xmit (49,274)
+20 xmit (187,215)
+40 xmit (140,5)
+60 xmit (13,86)
+80 xmit (140,238)
+100 xmit (186,7)
+120 xmit (83,293)
+140 xmit (179,52)
+160 xmit (77,213)
+180 xmit (179,231)
+200 xmit (287,87)
+220 xmit (172,96)
+240 xmit (33,60)
+260 xmit (66,125)
+280 xmit (117,68)
+300 xmit (171,205)
+320 xmit (170,117)
+340 xmit (47,245)
+360 xmit (32,26)
+380 xmit (121,133)
+400 xmit (192,74)
+420 xmit (198,288)
+440 xmit (107,295)
+460 xmit (252,86)
+480 xmit (202,185)
+500 xmit (182,245)
+520 xmit (271,221)
+540 xmit (105,185)
+560 xmit (258,221)
+580 xmit (260,15)
+600 xmit (62,135)
+620 linkdying (154,173)
+640 xmit (225,204)
+660 xmit (85,257)
+680 xmit (227,34)
+700 xmit (138,203)
+720 xmit (212,89)
+740 xmit (48,60)
+760 xmit (121,132)
+780 xmit (155,280)
+800 xmit (235,132)
+820 xmit (140,168)
+840 xmit (253,189)
+860 xmit (144,54)
+880 xmit (142,72)
+900 xmit (131,273)
+920 xmit (156,68)
+940 xmit (47,59)
+960 xmit (243,197)
+980 xmit (116,221)
+1000 xmit (161,86)
+1020 xmit (139,290)
+1040 xmit (61,243)
+1060 xmit (267,28)
+1080 xmit (147,133)
+1100 xmit (191,274)
+1120 xmit (222,27)
+1140 xmit (299,166)
+1160 xmit (3,119)
+1180 xmit (108,181)
+1200 xmit (123,94)
+1220 xmit (174,57)
+1240 xmit (241,148)
+1260 xmit (173,241)
+1280 xmit (268,86)
+1300 xmit (251,91)
+1320 xmit (209,196)
+1340 xmit (76,18)
+1360 xmit (164,152)
+1380 xmit (260,3)
+1400 linkdying (8,237)
+1420 xmit (22,117)
+1440 xmit (136,289)
+1460 xmit (291,190)
+1480 xmit (151,29)
+1500 xmit (104,262)
+1520 xmit (125,110)
+1540 xmit (69,95)
+1560 xmit (296,300)
+1580 xmit (168,59)
+1600 xmit (47,35)
+1620 xmit (224,289)
+1640 xmit (17,28)
+1660 xmit (290,54)
+1680 xmit (163,70)
+1700 xmit (165,7)
+1720 xmit (6,56)
+1740 xmit (166,215)
+1760 xmit (249,135)
+1780 xmit (175,188)
+1800 xmit (215,198)
+1820 xmit (3,92)
+1840 xmit (161,252)
+1860 xmit (258,152)
+1880 xmit (259,269)
+1900 linkdying (237,167)
+1920 xmit (184,54)
+1940 xmit (281,78)
+1960 xmit (292,158)
+1980 xmit (161,232)
+2000 xmit (93,20)
+2020 xmit (277,181)
+2040 xmit (140,177)
+2060 xmit (112,150)
+2080 xmit (255,292)
+2100 xmit (69,166)
+2120 xmit (76,50)
+2140 xmit (282,179)
+2160 linkcomingup (237,167)
+2180 xmit (274,203)
+2200 xmit (131,199)
+2220 xmit (48,281)
+2240 xmit (272,245)
+2260 xmit (163,250)
+2280 xmit (299,14)
+2300 xmit (192,41)
+2320 xmit (134,151)
+2340 xmit (105,35)
+2360 xmit (285,255)
+2380 xmit (287,20)
+2400 xmit (265,178)
+2420 xmit (179,251)
+2440 xmit (16,40)
+2460 xmit (80,117)
+2480 xmit (19,167)
+2500 xmit (254,250)
+2520 xmit (256,38)
+2540 xmit (57,263)
+2560 xmit (140,299)
+2580 xmit (2,118)
+2600 xmit (157,258)
+2620 xmit (127,76)
+2640 xmit (295,231)
+2660 xmit (232,181)
+2680 xmit (270,62)
+2700 xmit (76,132)
+2720 xmit (130,153)
+2740 xmit (23,34)
+2760 xmit (43,227)
+2780 xmit (3,274)
+2800 xmit (256,241)
+2820 xmit (121,36)
+2840 xmit (98,255)
+2860 xmit (86,173)
+2880 xmit (78,279)
+2900 linkdying (187,36)
+2920 xmit (107,132)
+2940 xmit (134,26)
+2960 xmit (281,188)
+2980 xmit (60,264)
+3000 xmit (113,1)
+3020 xmit (86,44)
+3040 xmit (121,259)
+3060 xmit (23,211)
+3080 xmit (42,53)
+3100 xmit (130,155)
+3120 xmit (42,88)
+3140 xmit (52,76)
+3160 xmit (76,277)
+3180 xmit (73,285)
+3200 xmit (296,76)
+3220 xmit (286,218)
+3240 xmit (22,156)
+3260 xmit (62,114)
+3280 xmit (201,95)
+3300 xmit (170,114)
+3320 xmit (91,224)
+3340 xmit (261,279)
+3360 xmit (106,23)
+3380 xmit (292,274)
+3400 xmit (129,124)
+3420 xmit (289,230)
+3440 xmit (24,106)
+3460 xmit (219,164)
+3480 xmit (139,203)
+3500 xmit (181,82)
+3520 xmit (104,182)
+3540 xmit (155,50)
+3560 xmit (225,181)
+3580 xmit (110,127)
+3600 xmit (232,46)
+3620 xmit (209,124)
+3640 xmit (26,185)
+3660 xmit (266,55)
+3680 xmit (237,124)
+3700 xmit (174,233)
+3720 xmit (113,259)
+3740 xmit (85,164)
+3760 xmit (261,40)
+3780 xmit (163,180)
+3800 xmit (116,216)
+3820 xmit (23,142)
+3840 xmit (265,27)
+3860 xmit (11,135)
+3880 xmit (93,50)
+3900 xmit (265,57)
+3920 xmit (148,214)
+3940 xmit (145,163)
+3960 xmit (131,147)
+3980 xmit (40,100)
+4000 xmit (126,67)
+4020 xmit (253,285)
+4040 xmit (86,209)
+4060 xmit (17,271)
+4080 xmit (185,118)
+4100 xmit (33,279)
+4120 linkdying (68,212)
+4140 xmit (217,37)
+4160 xmit (214,47)
+4180 xmit (300,7)
+4200 xmit (145,122)
+4220 xmit (139,41)
+4240 xmit (277,141)
+4260 xmit (173,11)
+4280 xmit (188,88)
+4300 xmit (176,81)
+4320 xmit (128,203)
+4340 xmit (261,208)
+4360 xmit (29,97)
+4380 xmit (189,74)
+4400 xmit (214,5)
+4420 xmit (67,176)
+4440 xmit (15,274)
+4460 xmit (54,41)
+4480 linkdying (159,14)
+4500 xmit (204,36)
+4520 linkdying (68,237)
+4540 xmit (35,174)
+4560 xmit (91,201)
+4580 xmit (287,182)
+4600 xmit (135,59)
+4620 linkcomingup (68,237)
+4640 xmit (170,30)
+4660 xmit (285,300)
+4680 xmit (168,154)
+4700 xmit (79,245)
+4720 xmit (145,76)
+4740 xmit (257,80)
+4760 xmit (138,277)
+4780 xmit (214,277)
+4800 xmit (58,289)
+4820 xmit (40,36)
+4840 xmit (189,96)
+4860 xmit (92,173)
+4880 xmit (248,275)
+4900 xmit (106,263)
+4920 xmit (239,40)
+4940 xmit (16,158)
+4960 xmit (198,153)
+4980 xmit (188,58)
+5000 xmit (205,54)
+5020 xmit (226,84)
+5040 xmit (110,154)
+5060 xmit (168,32)
+5080 xmit (72,95)
+5100 linkdying (31,300)
+5120 xmit (201,198)
+5140 xmit (137,292)
+5160 xmit (249,188)
+5180 xmit (166,296)
+5200 xmit (157,185)
+5220 xmit (52,55)
+5240 xmit (178,127)
+5260 xmit (182,263)
+5280 xmit (212,267)
+5300 xmit (258,104)
+5320 xmit (44,277)
+5340 xmit (24,234)
+5360 xmit (118,126)
+5380 xmit (232,88)
+5400 xmit (267,295)
+5420 xmit (257,209)
+5440 xmit (227,251)
+5460 xmit (107,84)
+5480 xmit (112,96)
+5500 xmit (81,264)
+5520 xmit (89,70)
+5540 xmit (158,197)
+5560 xmit (243,110)
+5580 xmit (71,252)
+5600 xmit (255,138)
+5620 xmit (273,127)
+5640 xmit (274,71)
+5660 xmit (86,285)
+5680 xmit (106,122)
+5700 xmit (70,230)
+5720 xmit (91,213)
+5740 xmit (216,183)
+5760 xmit (20,194)
+5780 xmit (20,243)
+5800 xmit (65,97)
+5820 linkcomingup (31,300)
+5840 xmit (26,72)
+5860 xmit (53,142)
+5880 xmit (106,171)
+5900 xmit (53,17)
+5920 xmit (262,173)
+5940 xmit (115,47)
+5960 xmit (195,228)
+5980 xmit (80,104)
+6030 end

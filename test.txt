@@ -1,0 +1,22 @@
+{\rtf1\ansi\ansicpg936\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Test strategy:\
+\
+DV implementation:\
+We implement the DV routing protocol in the following fashion:\
+1. Although we have write a forwarding table structure, we decide to use the DV table as our forwarding table because they basically do the same thing for this assignment.\
+2. We implemented 1s check for entry time out in the DV table and the port status table. We also do the 10s port update and 30s DV update and these functions are done by using set_alarm and handle_alarm.\
+3. When a local DV change happened on a router, the protocol will perform a triggered DV update. This change can be a link failure or can be a change of cost between routers. For the first change, we update the DV table by removing the entry with the failed port and passed this DV information to it\'92s alive neighbor. For the second case, we update the DV table with the new information and pass this information to all the alive neighbors. This flood of information will stop when the DV packet doesn\'92t affect the receiver router\'92s DV table and the receiver will not pass it on. \
+\
+DV testing:\
+1. We used the provided three simple test and we compute the corresponding table to see whether the generated forwarding is correct. The triggered update will be sent when a local DV change happened and the triggered DV packets is able to update the dv table to the right path under the current topology in a short time(<1s)\
+\
+2. Then we use a test case called mutest which contain 7 nodes and we test change delay situation. When at time=1250, the link between 4and 5 fails, the testing result shows that dv table of 5 will be empty which is correct because router 5 only has one port. At t=1500, the link come up, a triggered update will be sent from 4 and 5 to their neighbors and other router will update their router according and will pass on their updated dv table to their neighbors. In the next ping-pong update, the router 5\'92s routing table will be restored and the testing result shows that it is restored at t=1510. Finally, for the change delay on router 4 to 7, from the result of our test triggered updates can update other routers routing table right after the change is made.\
+\
+3. we also conduct load tests for more nodes, since it is not practical to write input file for hundreds of nodes, links and events by hand, we wrote a code to generate input file automatically, its principle is to fill in nodes, given number of random links between nodes, given numbers of random xmits and randomly assign linkdying, may or may not linkcomingup randomly. We think this will simulate the real-world complex network condition, the code is also attached as \'93RandomPort.cc\'94. We tested 50 modes with 150 links and 50 events, 150 nodes with 500 links and 150 events, 300 nodes or more. The input files are attached however the output file is way too large in size to be uploaded. Since there are lots of nodes in these cases, the DV triggered updates will send lots of packet when first trying to initial the DV table thus the it will take a very long time. Then I decide to comment out the DV triggered updates and only use periodic 30s update to form the DV table and we get the result in about 5 mins. One issue we encountered is that since we did not check whether every node can reach every other node, when we want to send a packet from a to b but a and b are not connected, we will have a problem . In order to get around with this, I write a statement to check whether a can reach b according to the forwarding and then decide to send or not send this packet. \
+\
+4. At last we examine the code carefully and check whether the data packet can be delivered to the right node. All the packet can be sent to correct destination in our test cases.}
